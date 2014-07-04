@@ -1,0 +1,32 @@
+<html>
+<script src="jquery-1.8.3.min.js"></script>
+<script  type="text/javascript">
+// Wait till dom is loaded
+$(document).ready(function() {
+  // When id with Action is clicked
+      // Load ajax.php as JSON and assign to the data variable
+     $.getJSON('index.php', function(results) {
+        // set the html content of the id myThing to the value contained in data
+             $.each(results.date, function(i,results){
+
+        	var eve = data.data.date;
+        	$("#stuff").append("evenr");
+        	console.log(eve);
+
+
+        });
+
+       
+     });   
+
+
+  });
+</script>
+<div id="stuff">
+	
+
+
+</div>
+
+
+</html>
